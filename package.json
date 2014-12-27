@@ -1,0 +1,22 @@
+{
+  "name": "skelenode-model",
+  "version": "0.0.0",
+  "description": "An object for skelenode data models",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tgolen/skelenode-model.git"
+  },
+  "keywords": [
+    "data",
+    "model",
+    "swagger",
+    "skelenode"
+  ],
+  "author": "Tim Golen <tim@golen.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgolen/skelenode-model/issues"
+  },
+  "homepage": "https://github.com/tgolen/skelenode-model"
+}
