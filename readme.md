@@ -11,14 +11,14 @@ npm install skelenode-model
 
 # Usage
 ### Create a model file
-`app/models/hello/world.js
+`app/models/hello/world.js`
 ```javascript
 'use strict';
 
 var SkelenodeModel = require('skelenode-model');
 
-module.exports = function(options) {
-	var Model = new SkelenodeModel(options);
+module.exports = function() {
+	var Model = new SkelenodeModel();
 
 	// create a swagger endpoint for this model
 	Model.setSwagger({
@@ -70,3 +70,6 @@ Model.setSwagger({
 
 ### getSwagger()
 Returns an array of all the swagger endpoints for the given model
+
+# Contributing
+Open a pull request with plenty of well-written instructions on what you are submitting and why you are submitting it
