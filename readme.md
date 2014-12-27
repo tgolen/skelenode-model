@@ -26,6 +26,8 @@ module.exports = function() {
 			path: '/api/v1/hello/world',
 			nickname: 'hello_world'
 		}, function(req, res, next) {
+			// each model receives an 'swr' attribute that contains the responses from
+			// Skelenode Swagger
 			Model.swr.success({ msg: 'Hello World!' }, res);
 			next();
 		});
