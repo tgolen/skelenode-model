@@ -38,7 +38,7 @@ module.exports = function() {
 
 ### Load the model with Skelenode Model Loader
 ```
-var skelenodeModelLoader = require('skelenode-model-loader');
+var skelenodeModelLoader = require('skelenode-model/loader');
 skelenodeModelLoader.init(__dirname + '/app/models');
 ```
 
