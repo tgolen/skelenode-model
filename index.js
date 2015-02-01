@@ -1,6 +1,6 @@
 'use strict';
 
-var _ = require('underscore'),
+var _ = require('lodash'),
 	swr = require('skelenode-swagger/respond');
 
 module.exports = function(options) {

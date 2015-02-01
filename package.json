@@ -1,6 +1,6 @@
 {
   "name": "skelenode-model",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An object for skelenode data models",
   "main": "index.js",
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/tgolen/skelenode-model",
   "dependencies": {
-    "skelenode-swagger": "0.0.1"
+    "skelenode-swagger": "0.0.1",
+    "lodash": "^3.0.1"
   }
 }
