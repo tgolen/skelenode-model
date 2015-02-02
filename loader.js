@@ -20,7 +20,7 @@ var glob = require('glob'),
  *
  * @param  {Function} cb
  */
-function init(pathToModels, cb) {
+function init(pathToModels, cb, addToSwagger) {
 	modelPath = pathToModels;
 	glob(modelPath + '/**/*.js', function(err, files) {
 		if (err) return cb && cb(err);
@@ -28,7 +28,7 @@ function init(pathToModels, cb) {
 		files.forEach(function(file) {
 			var Model = require(file)(),
 				modelSwagger = Model.getSwagger();
-			if (modelSwagger) {
+			if (modelSwagger && addToSwagger) {
 				modelSwagger.forEach(function(swaggerResource) {
 					swagger[swaggerMethodName[swaggerResource.spec.method.toLowerCase()]](swaggerResource);
 				});
