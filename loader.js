@@ -2,7 +2,6 @@
 
 var glob = require('glob'),
 	path = require('path'),
-	_ = require('lodash'),
 	swagger = require('swagger-node-restify'),
 	swaggerMethodName = {
 		get: 'addGet',
@@ -26,11 +25,11 @@ function init(pathToModels, cb) {
 	glob(modelPath + '/**/*.js', function(err, files) {
 		if (err) return cb && cb(err);
 
-		_(files).forEach(function(file) {
+		files.forEach(function(file) {
 			var Model = require(file)(),
 				modelSwagger = Model.getSwagger();
 			if (modelSwagger) {
-				_(modelSwagger).each(function(swaggerResource) {
+				modelSwagger.forEach(function(swaggerResource) {
 					swagger[swaggerMethodName[swaggerResource.spec.method.toLowerCase()]](swaggerResource);
 				});
 			}

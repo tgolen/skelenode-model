@@ -1,7 +1,6 @@
 'use strict';
 
-var _ = require('lodash'),
-	swr = require('skelenode-swagger/respond');
+var swr = require('skelenode-swagger/respond');
 
 module.exports = function(options) {
 	var SkelenodeModel = {};
