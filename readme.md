@@ -1,8 +1,8 @@
 # Skelenode Model
-This is a Skelenode component to manage your data models. It relies on Skelenode Swagger to provide automatic API documentation and routing. It can be paired with Skelenode Socket to allow HTTP requests to the model via XHR or web sockets using the same API route.
+This is a [Skelenode](https://github.com/tgolen/skelenode) component to manage your data models. It relies on [Skelenode Swagger](https://github.com/tgolen/skelenode-swagger) to provide automatic API documentation and routing. It can be paired with [Skelenode Socket](https://github.com/tgolen/skelenode-socket) to allow HTTP requests to the model via XHR or web sockets using the same API route.
 
 # Requirements
-* You must have a Skelenode server running with Skelenode Swagger
+* You must have a [Skelenode](https://github.com/tgolen/skelenode) server running with [Skelenode Swagger](https://github.com/tgolen/skelenode-swagger)
 
 # Installation
 ```
