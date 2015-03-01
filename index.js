@@ -15,6 +15,16 @@ module.exports = function(options) {
 	var swaggers = [];
 
 	/**
+	 * an initialization method that is called
+	 * as soon as the model is loaded.
+	 *
+	 * @author Tim Golen 2015-03-01
+	 *
+	 * @return {void}
+	 */
+	SkelenodeModel.init = function() {};
+
+	/**
 	 * sets the swagger options for a CRUD operation
 	 * example:
 	 * SkelenodeModel.setSwagger('create', {}, function() {});
