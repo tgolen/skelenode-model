@@ -1,10 +1,12 @@
 'use strict';
 
 var swr = require('skelenode-swagger/respond');
+var swaggerNodeRestify = require('swagger-node-restify');
 
 module.exports = function(options) {
 	var SkelenodeModel = {};
 	SkelenodeModel.swr = swr;
+    SkelenodeModel.swr.params = swaggerNodeRestify.params;
 
 	/**
 	 * holds the swagger specs for each of our CRUD

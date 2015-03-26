@@ -1,3 +1,8 @@
+# 0.0.8
+
+* added swagger param types to the swr property of the model
+* added in init() method to models
+
 # 0.0.6
 
 * added an option to skip adding the models to swagger

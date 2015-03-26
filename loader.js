@@ -27,7 +27,14 @@ function init(pathToModels, cb, addToSwagger) {
 
 		files.forEach(function(file) {
 			var Model = require(file)(),
-				modelSwagger = Model.getSwagger();
+				modelSwagger = null;
+
+            if (Model.init) {
+                Model.init();
+            }
+
+            modelSwagger = Model.getSwagger();
+            
 			if (modelSwagger && addToSwagger) {
 				modelSwagger.forEach(function(swaggerResource) {
 					swagger[swaggerMethodName[swaggerResource.spec.method.toLowerCase()]](swaggerResource);

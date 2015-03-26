@@ -1,6 +1,6 @@
 {
   "name": "skelenode-model",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An object for skelenode data models",
   "main": "index.js",
   "repository": {
@@ -13,7 +13,10 @@
     "swagger",
     "skelenode"
   ],
-  "author": "Tim Golen <tim@golen.net>",
+  "author": {
+    "name": "Tim Golen",
+    "email": "tim@golen.net"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tgolen/skelenode-model/issues"
@@ -23,5 +26,29 @@
     "swagger-node-restify": "^0.1.2",
     "skelenode-swagger": "0.0.1",
     "lodash": "^3.0.1"
-  }
+  },
+  "gitHead": "0b251d4415646fbd3f146eaa0b3d39c2b44e2800",
+  "_id": "skelenode-model@0.0.7",
+  "scripts": {},
+  "_shasum": "e4ddb78868feb5794e34286a1d38b29d63f7fd28",
+  "_from": "skelenode-model@*",
+  "_npmVersion": "2.4.1",
+  "_nodeVersion": "0.10.32",
+  "_npmUser": {
+    "name": "tgolen",
+    "email": "tim@golen.net"
+  },
+  "maintainers": [
+    {
+      "name": "tgolen",
+      "email": "tim@golen.net"
+    }
+  ],
+  "dist": {
+    "shasum": "e4ddb78868feb5794e34286a1d38b29d63f7fd28",
+    "tarball": "http://registry.npmjs.org/skelenode-model/-/skelenode-model-0.0.7.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/skelenode-model/-/skelenode-model-0.0.7.tgz",
+  "readme": "ERROR: No README data found!"
 }
